@@ -42,40 +42,43 @@ Split and merge HSV Image
 ### i) Read and display the image
 ```python
 import cv2
-image=cv2.imread('pig.jpg',1)
+image=cv2.imread('eiffle.jpg',1)
 image=cv2.resize(image,(400,300))
-cv2.imshow('Piggy-Friends',image)
+cv2.imshow('Eiffle Tower',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 #### Output:
-![Screenshot 2024-02-15 165803](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/6a07ffe6-2794-48a7-93ae-c0a1113380be)
+![Screenshot 2024-02-20 224729](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/97efe288-567c-4ba3-a338-a83c58ae0d84)
+
 
 ### ii)Write the image
 ```python
 import cv2
-image=cv2.imread('pig.jpg',0)
+image=cv2.imread('eiffle.jpg',0)
 cv2.imwrite('test.jpg',image)
 ```
 
 #### Output:
-![Screenshot 2024-02-15 165920](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/297cf426-9b6a-4bef-932b-0c425b490d90)
+![Screenshot 2024-02-20 224827](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/8af9c8ec-ef1a-459a-95a0-9ba3b74fdb06)
+
 
 
 ### iii)Shape of the Image
 ```python
 import cv2
-image=cv2.imread('pig.jpg',1)
+image=cv2.imread('eiffle.jpg',1)
 print(image.shape)
 ```
 #### Output:
-![Screenshot 2024-02-15 170006](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/21485061-53a9-46bb-b3e1-4e404a8d7278)
+![Screenshot 2024-02-20 224859](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/5bd3bdf5-5479-48ee-9ae1-6d191eb8f131)
+
 
 ### iv)Access rows and columns
 ```python
 import random
 import cv2
-image=cv2.imread('pig.jpg',1)
+image=cv2.imread('eiffle.jpg',1)
 image=cv2.resize(image,(400,400))
 for i in range (150,200):
     for j in range(image.shape[1]):
@@ -88,14 +91,14 @@ cv2.destroyAllWindows()
 ```
 
 #### Output:
-![Screenshot 2024-02-15 170055](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/7330e096-908c-46f9-a410-4adfe4ea2f5d)
+![Screenshot 2024-02-20 225005](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/d3803358-1142-4552-8cc7-96f942dd475d)
 
 
 
 ### v)Cut and paste portion of image
 ```python
 import cv2
-image=cv2.imread('pig.jpg',1)
+image=cv2.imread('eiffle.jpg',1)
 image=cv2.resize(image,(400,400))
 tag =image[150:200,110:160]
 image[110:160,150:200] = tag
@@ -104,14 +107,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 #### Output:
-![Screenshot 2024-02-15 170141](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/23ecb4d9-6c0a-465e-a201-3dd7d1d6a131)
+![Screenshot 2024-02-20 225045](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/79538511-2970-4872-a235-3bf2dd420cfd)
 
 
 
 ### vi) BGR and RGB to HSV and GRAY
 ```python
 import cv2
-img = cv2.imread('pig.jpg',1)
+img = cv2.imread('eiffle.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
@@ -131,14 +134,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 #### Output:
-![Screenshot 2024-02-15 170429](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/11e1b4fc-0c2c-4af5-82aa-eb5c4e1a777f)
+![Screenshot 2024-02-20 225154](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/af69ace8-4e19-4bf1-a570-8d604376cb91)
 
 
 
 ### vii) HSV to RGB and BGR
 ```python
 import cv2
-img = cv2.imread('pig.jpg')
+img = cv2.imread('eiffle.jpg')
 img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -154,7 +157,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 #### Output:
-![Screenshot 2024-02-15 170657](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/2d46eb3c-f370-466c-8c49-03a38c44737f)
+![Screenshot 2024-02-20 225258](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/7775c682-e243-49a5-8f40-0b386c2d974f)
 
 
 
@@ -162,7 +165,7 @@ cv2.destroyAllWindows()
 
 ```python
 import cv2
-img = cv2.imread('pig.jpg')
+img = cv2.imread('eiffle.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
@@ -176,14 +179,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 #### Output:
-![Screenshot 2024-02-15 170819](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/97ff62a8-494a-4bc6-b0c6-356882618722)
 
+![Screenshot 2024-02-20 225341](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/db705783-0fb0-4411-a971-86a1c1b1bc20)
 
 
 ### ix) Split and merge RGB Image
 ```python
 import cv2
-img = cv2.imread('pig.jpg',1)
+img = cv2.imread('eiffle.jpg',1)
 img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
@@ -201,13 +204,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 #### Output:
-![Screenshot 2024-02-15 171013](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/9a76446f-55ef-4334-b83f-5ba4e96fddaf)
+![Screenshot 2024-02-20 225426](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/1ddc4dce-40d6-4d5a-be19-39413ba08e8b)
 
 
 ### x) Split and merge HSV Image
 ```python
 import cv2
-img = cv2.imread("pig.jpg",1)
+img = cv2.imread("eiffle.jpg",1)
 img = cv2.resize(img,(200,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
@@ -225,7 +228,7 @@ cv2.destroyAllWindows()
 ```
 #### Output:
 
-![Screenshot 2024-02-15 171154](https://github.com/DARIOGEORGE/COLOR_CONVERSIONS_OF-IMAGE/assets/118704873/64de5fd5-1da7-4b9f-b077-102845904712)
+![Screenshot 2024-02-20 225642](https://github.com/rakesh9339/COLOR_CONVERSIONS_OF-IMAGE/assets/121115650/bd20f712-95c8-48d3-a6dd-0e9730e57825)
 
 
 
